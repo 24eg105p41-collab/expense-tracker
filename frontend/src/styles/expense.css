@@ -1,0 +1,35 @@
+.filters { display: flex; flex-direction: column; gap: 1rem; }
+.filter-row { display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; gap: 0.9rem; align-items: end; }
+
+.form { max-width: 640px; display: flex; flex-direction: column; gap: 1.1rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-actions { display: flex; justify-content: flex-end; gap: 0.6rem; }
+
+.list-card { padding: 0; overflow: hidden; transition: opacity 0.15s; }
+.list-card.is-loading { opacity: 0.6; }
+.table-wrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 0.8rem 1rem; text-align: left; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.table thead th { background: var(--surface-alt); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
+.table tbody tr:last-child td { border-bottom: none; }
+.table tbody tr:hover { background: var(--surface-alt); }
+.table .num { text-align: right; }
+.table .amount { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.actions-col { text-align: right; white-space: nowrap; }
+.actions-col .btn + .btn { margin-left: 0.4rem; }
+
+.sort-btn { all: unset; cursor: pointer; display: inline-flex; gap: 0.3rem; align-items: center; font-weight: 700; }
+.sort-btn:focus-visible { outline: 2px solid var(--primary); }
+.sort-arrow { font-size: 0.65rem; min-width: 0.7rem; }
+
+.expense-title { font-weight: 600; }
+.expense-desc { color: var(--text-muted); font-size: 0.82rem; }
+
+.badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.2rem 0.65rem; border-radius: 999px; font-size: 0.78rem; font-weight: 700; white-space: nowrap; }
+.badge-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+
+.pagination { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.8rem 1rem; border-top: 1px solid var(--border); font-size: 0.88rem; }
+.pagination-controls { display: flex; align-items: center; gap: 0.6rem; }
+.pagination-size { display: flex; align-items: center; gap: 0.4rem; color: var(--text-muted); }
+.pagination-size select { width: auto; padding: 0.25rem 0.4rem; }
+.pagination-info, .pagination-page { color: var(--text-muted); }
